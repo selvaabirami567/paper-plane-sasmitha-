@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Compass</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+  <div class="logo-section">
+    <img src="logo.png" class="logo">
+    <span class="brand">Campus Compass</span>
+  </div>
+
+  <div class="nav-right">
+    <a href="calendar.html" class="nav-link">📅 Calendar</a>
+
+    <span class="notification-icon" title="Notifications">
+      🔔
+    </span>
+
+    <a href="admin.html" class="nav-link">Admin</a>
+  </div>
+</header>
+
+  <section class="hero">
+    <h1>Your guide to campus events and opportunities.</h1>
+    <p>Never miss hackathons, competitions, or club events.</p>
+
+  </section>
+
+
+<section class="filters-container">
+
+  <div class="filter-group">
+    <span class="filter-title">Category</span>
+    <button onclick="setCategory('All')">All</button>
+    <button onclick="setCategory('Hackathon')">Hackathons</button>
+    <button onclick="setCategory('Competition')">Competitions</button>
+    <button onclick="setCategory('Club')">Club Events</button>
+  </div>
+
+  <div class="filter-group">
+    <span class="filter-title">Department</span>
+    <button onclick="setDepartment('All')">All</button>
+    <button onclick="setDepartment('CSE')">CSE</button>
+    <button onclick="setDepartment('ECE')">ECE</button>
+    <button onclick="setDepartment('IT')">IT</button>
+    <button onclick="setDepartment('MECH')">MECH</button
+  </div>
+
+</section>
+
+  <section class="events">
+    <div id="eventList" class="event-row"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
